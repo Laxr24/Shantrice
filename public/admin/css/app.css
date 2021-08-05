@@ -1,0 +1,96 @@
+@import url(https://fonts.googleapis.com/css2?family=Courgette&display=swap);
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  background-color: #16a085;
+}
+
+.container {
+  padding: 2em 2em;
+}
+.container .hero_image {
+  padding: 0.9em;
+  display: flex;
+  justify-content: center;
+}
+.container .hero_image .image {
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  background-origin: content-box;
+  border: 7px solid #35db35;
+  border-radius: 50%;
+}
+.container .information {
+  padding: 2em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.container .information .headline {
+  font-size: 2em;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "Courgette", cursive;
+}
+.container .information .subHeadline {
+  font-size: 1em;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "Courgette", cursive;
+}
+.container .information .description {
+  color: white;
+  font-weight: 200;
+  line-height: 1.4;
+}
+.container .information .action_button {
+  text-decoration: none;
+  color: black;
+  background: white;
+  padding: 1em 3em;
+  text-align: center;
+  border-radius: 30px;
+  margin: 5px;
+}
+
+@media only screen and (min-width: 980px) {
+  .container {
+    visibility: hidden;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 4em 20em;
+  }
+  .container .hero_image {
+    justify-content: end;
+  }
+  .container .hero_image .image {
+    width: 400px;
+    height: 600px;
+    border-radius: 10px;
+  }
+  .container .information {
+    padding: 2em;
+    text-align: left;
+  }
+  .container .information .headline {
+    font-size: 4em;
+  }
+  .container .information .subHeadline {
+    font-size: 2em;
+  }
+  .container .information .description {
+    color: white;
+    font-weight: 200;
+    line-height: 1.4;
+  }
+}

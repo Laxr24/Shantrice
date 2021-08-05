@@ -1,0 +1,4 @@
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/shantri2/public_html/
+    - /bin/cp * $DEPLOYPATH
