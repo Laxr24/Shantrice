@@ -21,5 +21,14 @@
     </div>
     </div>
 
+    <div id="terminalContainer">
+        <div class="topBar">
+            <div class="closeBtn terminalBtn"></div>
+            <div class="minimizeBtn terminalBtn"></div>
+            <div class="expandBtn terminalBtn"></div>
+        </div>
+         <div id="terminal"></div>
+     </div>
+
 </div>
 @endsection
