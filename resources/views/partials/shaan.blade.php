@@ -21,6 +21,7 @@
     </div>
     </div>
 
+    <p>type "--help" and press enter: </p>
     <div id="terminalContainer">
         <div class="topBar">
             <div class="closeBtn terminalBtn"></div>
