@@ -13,4 +13,7 @@ const mix = require('laravel-mix');
 
 mix.js('resources/js/app.js', 'public/js')
     .js('resources/admin/js/main.js', 'public/admin/js')
+    .css('resources/css/app.css', 'public/css/app.css', [
+        require('tailwindcss')
+    ])
     .sass('resources/admin/css/app.scss', 'public/admin/css');

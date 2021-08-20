@@ -1,11 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {{-- MEta tags --}}
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @if ($config['search-engine-index'] != 'false')
+         <meta name="robots" content="all">
+    @endif
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{{config('app.name')}}</title>
-    <link rel="shortcut icon" href="favicon.gif" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="{{$config['meta-title']}}" content="{{ $config['meta-description']}}" />
+    <meta name="robots" content="max-snippet:120">
+
+
+
+
+    {{-- Site title --}}
+    <title>{{ $config['site-name'] }}|{{ $config['site-title'] }}</title>
+
+    {{-- Favicon Link --}}
+    <link rel="shortcut icon" href="{{$config['favicon-url']}}" type="image/x-icon">
+    
+    
+    
+
+
+
     {{-- Imports --}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
