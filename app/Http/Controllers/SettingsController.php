@@ -73,7 +73,8 @@ class SettingsController extends Controller
                         return $data; 
                     }
     
-                    return view('admin.home')->with([
+                    // Return the main view
+                    return view('dashboard.home')->with([
                         'config'=> variableData($siteSettingsConfig), 
                         'home' => variableData($homeConfigPath)
                     ]);
@@ -136,7 +137,8 @@ class SettingsController extends Controller
             fwrite($homeConfig, $encodedHome); 
             fclose($homeConfig); 
     
-            return redirect()->route('admin-home');
+            // return redirect()->route('admin-home');
+            return redirect()->back(); 
             
         }
 }

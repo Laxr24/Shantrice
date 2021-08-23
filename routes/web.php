@@ -40,14 +40,17 @@ Route::any('/show', function(){
 }); 
 
 
-Route::prefix('settings')->group(function(){
-    // Shows the route list 
+// Route::prefix('settings')->group(function(){
+//     // Shows the route list 
+//     Route::get('/', [SettingsController::class, 'index'])->name('admin-home'); 
+//     Route::post('/', [SettingsController::class, 'update'])->name('admin-update');  
+
+// }); 
+
+Route::prefix('settings∂')->group(function(){
     Route::get('/', [SettingsController::class, 'index'])->name('admin-home'); 
-    Route::post('/', [SettingsController::class, 'update'])->name('admin-update');  
-
+    Route::post('/', [SettingsController::class, 'update'])->name('admin-update'); 
 }); 
-
-
 
 // Default error Page
 Route::any('/{any}', function () {
